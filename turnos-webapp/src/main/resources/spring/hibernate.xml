@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cxf="http://cxf.apache.org/core"
+        xmlns:jaxws="http://cxf.apache.org/jaxws"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                    http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+                    http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+ 	<bean id="Datasource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="java:comp/env/jdbc/academia"/>
+	</bean>
+	
+<!-- 
+    <bean id="hibernate.sessionFactory"
+            class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+            <property name="dataSource" ref="Datasource" />
+      
+             <property name="packagesToScan">
+                <list>
+                    <value>com.academia.entities</value>
+                   
+                </list>
+            </property>
+        </bean>
+        
+        -->
+    </beans>

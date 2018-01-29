@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<!-- 
+	<bean id="PlanesDao" class="com.academia.daos.PlanesDAO">
+	<property name="sessionFactory" ref="hibernate.sessionFactory"></property>
+	</bean>
+	
+	<bean id="AfiliadosDao" class="com.academia.daos.AfiliadosDAO">
+	<property name="sessionFactory" ref="hibernate.sessionFactory"></property>
+	</bean>
+		
+	<bean id="PrestadoresDao" class="com.academia.daos.PrestadoresDAO">
+	<property name="sessionFactory" ref="hibernate.sessionFactory"></property>
+	</bean>
+	
+	<bean id="PracticasDao" class="com.academia.daos.PracticasDAO">
+	<property name="sessionFactory" ref="hibernate.sessionFactory"></property>
+	</bean>
+	
+	<bean id="TurnosDao" class="com.academia.daos.TurnosDAO">
+	<property name="sessionFactory" ref="hibernate.sessionFactory"></property>
+	</bean>
+	-->
+	<!-- aca inyecto al dao el sessionFactory, le hago referencia al bean de hibernate -->
+	
+	
+	
+</beans>

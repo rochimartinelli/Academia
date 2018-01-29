@@ -1,0 +1,41 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<welcome-file-list>
+		<welcome-file>/login.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<display-name>Trabajo Practico</display-name>
+	
+	<!-- STRUTS -->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- SPRING -->
+	<context-param>
+	    <param-name>contextConfigLocation</param-name>
+	    <param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+	
+	<listener>
+	    <listener-class>
+	        org.springframework.web.context.ContextLoaderListener
+	    </listener-class>
+	</listener>
+	<!-- HIBERNATE -->
+	<resource-ref >
+	    <description >MySQL Datasource example </description >
+	    <res-ref-name >jdbc/academia</res-ref-name >
+	    <res-type >javax.sql.DataSource</res-type >
+	    <res-auth >Container</res-auth >
+	</resource-ref >
+
+</web-app>

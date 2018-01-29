@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="login" class="com.softtek.academia.actions.SaludoAction" >
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+	</package>
+	<package name="Pacientes" extends="struts-default" namespace="/">
+		<action name="nuevoAfiliado" class="com.softtek.academia.actions.PacientesAction" method="nuevoPaciente">
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+		<action name="modificarAfiliado" class="com.softtek.academia.actions.PacientesAction" method="modificarPaciente">
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+		<action name="eliminarAfiliado" class="com.softtek.academia.actions.PacientesAction" method="eliminarPaciente">
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+	</package>
+	<package name="Turnos" extends="struts-default" namespace="/">
+		<action name="nuevoTurno" class="com.softtek.academia.actions.TurnosAction" method="nuevoTurno">
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+		<action name="modificarTurno" class="com.softtek.academia.actions.TurnosAction" method="modificarTurno">
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+		<action name="eliminarTurno" class="com.softtek.academia.actions.TurnosAction" method="eliminarTurno">
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+		<action name="pdf" class="com.softtek.academia.actions.TurnosAction" >
+			<result name="success">/pages/Staff.jsp</result>
+		</action>
+	</package>
+
+</struts>

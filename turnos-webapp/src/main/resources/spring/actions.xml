@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<!--  
+	<bean id="helloWorldAction"
+		class="com.softtek.academia.turnos.webapp.action.HelloWorldAction">
+		<property name="mensaje" value="softtek"></property>
+		<property name="testBO" ref="test.bo"></property>
+		<property name="planesDAO" ref="PlanesDao"></property>
+		<property name="afiliadosDAO" ref="AfiliadosDao"></property>
+		<property name="prestadoresDAO" ref="PrestadoresDao"></property>
+		<property name="practicasDAO" ref="PracticasDao"></property>
+		<property name="turnosDAO" ref="TurnosDao"></property>
+	</bean>
+-->		
+
+		<!-- el nombre de las propiedades tiene que coincidir con el del atributo 
+			en la clase -->
+	<!-- 
+	<bean id="repository"
+		class="com.softtek.academia.turnos.webapp.action.PacienteRepository">
+		<constructor-arg name="dataSource" ref="Datasource" /> -->
+		<!-- este bean hace referencia al metodo que imprime por pantalla la conexion a la base -->
+	<!--  </bean>
+	
+	-->
+	
+	
+	
+</beans>
